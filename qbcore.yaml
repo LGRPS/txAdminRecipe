@@ -8,8 +8,13 @@ description: An advanced FiveM RP framework including jobs, gangs, housing & mor
 tasks:
   #  Download Base Files
   - action: download_github
-    src: https://github.com/qbcore-framework/txAdminRecipe
+    src: https://github.com/LGRPS/txAdminRecipe
     ref: main
+    dest: ./tmp/qbcore
+
+  - action: download_github
+    src: https://github.com/LGRPS/qb-template
+    ref: master
     dest: ./tmp/qbcore
 
   - action: move_path
@@ -115,11 +120,6 @@ tasks:
     
   # Downloading QBCore resources
   - action: download_github
-    dest: ./resources/[qb]/qb-core
-    ref: main
-    src: https://github.com/qbcore-framework/qb-core
-
-  - action: download_github
     dest: ./resources/[qb]/qb-gangmenu
     ref: main
     src: https://github.com/qbcore-framework/qb-gangmenu
@@ -201,11 +201,6 @@ tasks:
     dest: ./resources/[qb]/qb-lapraces
     ref: main
     src: https://github.com/qbcore-framework/qb-lapraces
-
-  - action: download_github
-    dest: ./resources/[qb]/qb-inventory
-    ref: main
-    src: https://github.com/qbcore-framework/qb-inventory
 
   - action: download_github
     dest: ./resources/[qb]/qb-houses
@@ -459,11 +454,6 @@ tasks:
     src: https://github.com/qbcore-framework/qb-builderjob
 
   - action: download_github
-    dest: ./resources/[qb]/qb-shops
-    ref: main
-    src: https://github.com/qbcore-framework/qb-shops
-
-  - action: download_github
     dest: ./resources/[qb]/qb-lockpick
     ref: main
     src: https://github.com/qbcore-framework/qb-lockpick
@@ -483,6 +473,31 @@ tasks:
     ref: main
     src: https://github.com/qbcore-framework/qb-input
 
-  # Clean up
+##############################################
+########   LGRPS CUSTOMISED FILES   ##########
+##############################################
+  - action: download_github
+    dest: ./resources/[git]/aj-inventory
+    ref: main
+    src: https://github.com/LGRPS/aj-inventory
+
+  - action: download_github
+    dest: ./resources/qb-core
+    ref: main
+    src: https://github.com/LGRPS/qb-core
+
+  - action: download_github
+    dest: ./resources/[git]/qb-shops
+    ref: main
+    src: https://github.com/LGRPS/qb-shops
+
+  - action: download_github
+    dest: ./resources/[git]/qb-target
+    ref: main
+    src: https://github.com/LGRPS/qb-target
+
+##############################################
+###############   CLEAN UP   #################
+##############################################
   - action: remove_path
     path: ./tmp

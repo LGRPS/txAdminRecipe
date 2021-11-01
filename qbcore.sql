@@ -331,3 +331,30 @@ CREATE TABLE IF NOT EXISTS `trunkitems` (
   PRIMARY KEY (`plate`),
   KEY `id` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1;
+
+
+-- ##############################################
+-- ########   LGRPS CUSTOMISED FILES   ##########
+-- ##############################################
+
+CREATE TABLE IF NOT EXISTS `known_recipes` (
+  `identifier` varchar(50) DEFAULT NULL,
+  `data` longtext
+);
+
+CREATE TABLE IF NOT EXISTS `craftingtables` (
+  `location` longtext
+);
+
+CREATE TABLE IF NOT EXISTS `skills` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `identifier` varchar(255) NOT NULL,
+  `stamina` varchar(255) NOT NULL,
+  `strength` varchar(255) NOT NULL,
+  `driving` varchar(255) DEFAULT NULL,
+  `shooting` varchar(255) DEFAULT NULL,
+  `fishing` varchar(255) DEFAULT NULL,
+  `drugs` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
