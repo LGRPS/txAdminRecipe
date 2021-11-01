@@ -12,11 +12,6 @@ tasks:
     ref: main
     dest: ./tmp/qbcore
 
-  - action: download_github
-    src: https://github.com/LGRPS/qb-template
-    ref: master
-    dest: ./tmp/qbcore
-
   - action: move_path
     src: ./tmp/qbcore/server.cfg
     dest: ./server.cfg
@@ -29,7 +24,6 @@ tasks:
   - action: connect_database
   - action: query_database
     file: ./tmp/qbcore/qbcore.sql
-    
 
   # STANDALONE
   - action: download_github
