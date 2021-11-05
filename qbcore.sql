@@ -358,3 +358,157 @@ CREATE TABLE IF NOT EXISTS `skills` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- ##############################################
+-- ########   MyDefaultPlayer   ##########
+-- ##############################################
+
+-- --------------------------------------------------------
+-- Host:                         127.0.0.1
+-- Server version:               10.4.21-MariaDB - mariadb.org binary distribution
+-- Server OS:                    Win64
+-- HeidiSQL Version:             11.3.0.6295
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+-- Dumping data for table lgrp.apartments: ~1 rows (approximately)
+/*!40000 ALTER TABLE `apartments` DISABLE KEYS */;
+INSERT INTO `apartments` (`id`, `name`, `type`, `label`, `citizenid`) VALUES
+	(1, 'apartment35633', 'apartment3', 'Integrity Way 5633', 'DAY66829');
+/*!40000 ALTER TABLE `apartments` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.bank_accounts: ~0 rows (approximately)
+/*!40000 ALTER TABLE `bank_accounts` DISABLE KEYS */;
+/*!40000 ALTER TABLE `bank_accounts` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.bank_statements: ~0 rows (approximately)
+/*!40000 ALTER TABLE `bank_statements` DISABLE KEYS */;
+/*!40000 ALTER TABLE `bank_statements` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.bans: ~0 rows (approximately)
+/*!40000 ALTER TABLE `bans` DISABLE KEYS */;
+/*!40000 ALTER TABLE `bans` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.craftingtables: ~0 rows (approximately)
+/*!40000 ALTER TABLE `craftingtables` DISABLE KEYS */;
+/*!40000 ALTER TABLE `craftingtables` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.crypto: ~0 rows (approximately)
+/*!40000 ALTER TABLE `crypto` DISABLE KEYS */;
+INSERT INTO `crypto` (`crypto`, `worth`, `history`) VALUES
+	('qbit', 1, '[{"NewWorth":1,"PreviousWorth":0}]');
+/*!40000 ALTER TABLE `crypto` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.crypto_transactions: ~0 rows (approximately)
+/*!40000 ALTER TABLE `crypto_transactions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `crypto_transactions` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.dealers: ~0 rows (approximately)
+/*!40000 ALTER TABLE `dealers` DISABLE KEYS */;
+/*!40000 ALTER TABLE `dealers` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.gloveboxitems: ~0 rows (approximately)
+/*!40000 ALTER TABLE `gloveboxitems` DISABLE KEYS */;
+/*!40000 ALTER TABLE `gloveboxitems` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.houselocations: ~0 rows (approximately)
+/*!40000 ALTER TABLE `houselocations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `houselocations` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.house_plants: ~0 rows (approximately)
+/*!40000 ALTER TABLE `house_plants` DISABLE KEYS */;
+/*!40000 ALTER TABLE `house_plants` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.known_recipes: ~0 rows (approximately)
+/*!40000 ALTER TABLE `known_recipes` DISABLE KEYS */;
+/*!40000 ALTER TABLE `known_recipes` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.lapraces: ~0 rows (approximately)
+/*!40000 ALTER TABLE `lapraces` DISABLE KEYS */;
+/*!40000 ALTER TABLE `lapraces` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.occasion_vehicles: ~0 rows (approximately)
+/*!40000 ALTER TABLE `occasion_vehicles` DISABLE KEYS */;
+/*!40000 ALTER TABLE `occasion_vehicles` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.permissions: ~0 rows (approximately)
+/*!40000 ALTER TABLE `permissions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `permissions` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.phone_invoices: ~0 rows (approximately)
+/*!40000 ALTER TABLE `phone_invoices` DISABLE KEYS */;
+/*!40000 ALTER TABLE `phone_invoices` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.phone_messages: ~0 rows (approximately)
+/*!40000 ALTER TABLE `phone_messages` DISABLE KEYS */;
+/*!40000 ALTER TABLE `phone_messages` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.phone_tweets: ~0 rows (approximately)
+/*!40000 ALTER TABLE `phone_tweets` DISABLE KEYS */;
+/*!40000 ALTER TABLE `phone_tweets` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.players: ~1 rows (approximately)
+/*!40000 ALTER TABLE `players` DISABLE KEYS */;
+INSERT INTO `players` (`id`, `citizenid`, `cid`, `license`, `name`, `money`, `charinfo`, `job`, `gang`, `position`, `metadata`, `inventory`, `last_updated`) VALUES
+	(1, 'DAY66829', 1, 'license:be8522acbdb08c140c164ab6b0021bd0dd8e0551', 'Wrighty', '{"bank":50000000,"cash":50000000,"crypto":0}', '{"birthdate":"1987-07-07","gender":0,"phone":"1677598432","lastname":"Jennings","cid":"1","account":"US06QBCore5864226759","firstname":"Logan","nationality":"British","backstory":"placeholder backstory"}', '{"name":"unemployed","label":"Civilian","onduty":true,"isboss":false,"grade":{"name":"Freelancer","level":0},"payment":10}', '{"name":"none","grade":{"name":"none","level":0},"label":"No Gang Affiliaton","isboss":false}', '{"x":257.5648498535156,"y":-641.037353515625,"z":40.2996826171875}', '{"isdead":false,"jailitems":[],"jobrep":{"tow":0,"hotdog":0,"taxi":0,"trucker":0},"licences":{"business":false,"driver":true,"weapon":false},"currentapartment":"apartment35633","status":[],"phone":[],"ishandcuffed":false,"thirst":92.4,"dealerrep":0,"craftingrep":0,"armor":0,"stress":0,"walletid":"QB-71787173","phonedata":{"SerialNumber":64422382,"InstalledApps":[]},"hunger":91.6,"inside":{"apartment":[]},"criminalrecord":{"hasRecord":false},"fingerprint":"Oe402p84vnh2693","callsign":"NO CALLSIGN","commandbinds":[],"bloodtype":"A+","attachmentcraftingrep":0,"fitbit":[],"tracker":false,"injail":0,"inlaststand":false}', '[{"name":"phone","type":"item","slot":1,"info":[],"amount":1},{"name":"driver_license","type":"item","slot":2,"info":{"type":"Class C Driver License","lastname":"Jennings","birthdate":"1987-07-07","firstname":"Logan"},"amount":1},{"name":"id_card","type":"item","slot":3,"info":{"gender":0,"lastname":"Jennings","citizenid":"DAY66829","birthdate":"1987-07-07","nationality":"British","firstname":"Logan"},"amount":1}]', '2021-11-05 10:11:27');
+/*!40000 ALTER TABLE `players` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.playerskins: ~1 rows (approximately)
+/*!40000 ALTER TABLE `playerskins` DISABLE KEYS */;
+INSERT INTO `playerskins` (`id`, `citizenid`, `model`, `skin`, `active`) VALUES
+	(1, 'DAY66829', '1885233650', '{"jaw_bone_width":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"chimp_hole":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"beard":{"item":5,"texture":3,"defaultTexture":1,"defaultItem":-1},"eyebrows":{"item":0,"texture":1,"defaultTexture":1,"defaultItem":-1},"pants":{"item":98,"texture":30,"defaultTexture":0,"defaultItem":0},"moles":{"item":-1,"texture":0,"defaultTexture":0,"defaultItem":-1},"nose_0":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"nose_5":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"chimp_bone_width":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"blush":{"item":-1,"texture":1,"defaultTexture":1,"defaultItem":-1},"eyebrown_high":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"shoes":{"item":7,"texture":0,"defaultTexture":0,"defaultItem":1},"face":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"cheek_1":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"vest":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"eye_opening":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"chimp_bone_lenght":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"lipstick":{"item":-1,"texture":1,"defaultTexture":1,"defaultItem":-1},"jaw_bone_back_lenght":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"watch":{"item":-1,"texture":0,"defaultTexture":0,"defaultItem":-1},"chimp_bone_lowering":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"nose_2":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"torso2":{"item":167,"texture":7,"defaultTexture":0,"defaultItem":0},"mask":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"neck_thikness":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"cheek_3":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"cheek_2":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"nose_4":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"bag":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"ear":{"item":-1,"texture":0,"defaultTexture":0,"defaultItem":-1},"eyebrown_forward":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"nose_1":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"t-shirt":{"item":47,"texture":3,"defaultTexture":0,"defaultItem":1},"eye_color":{"item":-1,"texture":0,"defaultTexture":0,"defaultItem":-1},"decals":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"accessory":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"bracelet":{"item":-1,"texture":0,"defaultTexture":0,"defaultItem":-1},"ageing":{"item":-1,"texture":0,"defaultTexture":0,"defaultItem":-1},"makeup":{"item":-1,"texture":1,"defaultTexture":1,"defaultItem":-1},"nose_3":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"glass":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"arms":{"item":19,"texture":0,"defaultTexture":0,"defaultItem":0},"lips_thickness":{"item":0,"texture":0,"defaultTexture":0,"defaultItem":0},"hat":{"item":-1,"texture":0,"defaultTexture":0,"defaultItem":-1},"hair":{"item":2,"texture":2,"defaultTexture":0,"defaultItem":0}}', 1);
+/*!40000 ALTER TABLE `playerskins` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.player_boats: ~0 rows (approximately)
+/*!40000 ALTER TABLE `player_boats` DISABLE KEYS */;
+/*!40000 ALTER TABLE `player_boats` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.player_contacts: ~0 rows (approximately)
+/*!40000 ALTER TABLE `player_contacts` DISABLE KEYS */;
+/*!40000 ALTER TABLE `player_contacts` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.player_houses: ~0 rows (approximately)
+/*!40000 ALTER TABLE `player_houses` DISABLE KEYS */;
+/*!40000 ALTER TABLE `player_houses` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.player_mails: ~0 rows (approximately)
+/*!40000 ALTER TABLE `player_mails` DISABLE KEYS */;
+/*!40000 ALTER TABLE `player_mails` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.player_outfits: ~1 rows (approximately)
+/*!40000 ALTER TABLE `player_outfits` DISABLE KEYS */;
+INSERT INTO `player_outfits` (`id`, `citizenid`, `outfitname`, `model`, `skin`, `outfitId`) VALUES
+	(1, 'DAY66829', 'Default', '1885233650', '{"nose_1":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"jaw_bone_back_lenght":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"mask":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"cheek_2":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"vest":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"nose_3":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"watch":{"texture":0,"defaultItem":-1,"defaultTexture":0,"item":-1},"jaw_bone_width":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"eye_opening":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"nose_5":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"ear":{"texture":0,"defaultItem":-1,"defaultTexture":0,"item":-1},"lipstick":{"texture":1,"defaultItem":-1,"defaultTexture":1,"item":-1},"t-shirt":{"texture":3,"defaultItem":1,"defaultTexture":0,"item":47},"bracelet":{"texture":0,"defaultItem":-1,"defaultTexture":0,"item":-1},"chimp_bone_lenght":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"neck_thikness":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"chimp_hole":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"cheek_1":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"hair":{"texture":2,"defaultItem":0,"defaultTexture":0,"item":2},"hat":{"texture":0,"defaultItem":-1,"defaultTexture":0,"item":-1},"face":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"nose_0":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"nose_4":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"chimp_bone_width":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"glass":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"eye_color":{"texture":0,"defaultItem":-1,"defaultTexture":0,"item":-1},"makeup":{"texture":1,"defaultItem":-1,"defaultTexture":1,"item":-1},"blush":{"texture":1,"defaultItem":-1,"defaultTexture":1,"item":-1},"pants":{"texture":30,"defaultItem":0,"defaultTexture":0,"item":98},"ageing":{"texture":0,"defaultItem":-1,"defaultTexture":0,"item":-1},"accessory":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"bag":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"beard":{"texture":3,"defaultItem":-1,"defaultTexture":1,"item":5},"shoes":{"texture":0,"defaultItem":1,"defaultTexture":0,"item":7},"eyebrows":{"texture":1,"defaultItem":-1,"defaultTexture":1,"item":0},"decals":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"moles":{"texture":0,"defaultItem":-1,"defaultTexture":0,"item":-1},"arms":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":19},"cheek_3":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"torso2":{"texture":7,"defaultItem":0,"defaultTexture":0,"item":167},"nose_2":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"chimp_bone_lowering":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"eyebrown_high":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"eyebrown_forward":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0},"lips_thickness":{"texture":0,"defaultItem":0,"defaultTexture":0,"item":0}}', 'outfit-9-1437');
+/*!40000 ALTER TABLE `player_outfits` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.player_vehicles: ~0 rows (approximately)
+/*!40000 ALTER TABLE `player_vehicles` DISABLE KEYS */;
+/*!40000 ALTER TABLE `player_vehicles` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.player_warns: ~0 rows (approximately)
+/*!40000 ALTER TABLE `player_warns` DISABLE KEYS */;
+/*!40000 ALTER TABLE `player_warns` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.skills: ~1 rows (approximately)
+/*!40000 ALTER TABLE `skills` DISABLE KEYS */;
+INSERT INTO `skills` (`id`, `identifier`, `stamina`, `strength`, `driving`, `shooting`, `fishing`, `drugs`) VALUES
+	(1, 'DAY66829', '0', '0', '0', '0', '0', '0');
+/*!40000 ALTER TABLE `skills` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.stashitems: ~0 rows (approximately)
+/*!40000 ALTER TABLE `stashitems` DISABLE KEYS */;
+/*!40000 ALTER TABLE `stashitems` ENABLE KEYS */;
+
+-- Dumping data for table lgrp.trunkitems: ~0 rows (approximately)
+/*!40000 ALTER TABLE `trunkitems` DISABLE KEYS */;
+/*!40000 ALTER TABLE `trunkitems` ENABLE KEYS */;
+
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

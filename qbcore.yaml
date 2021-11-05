@@ -220,11 +220,6 @@ tasks:
     src: https://github.com/qbcore-framework/qb-radialmenu
 
   - action: download_github
-    dest: ./resources/[qb]/qb-crypto
-    ref: main
-    src: https://github.com/qbcore-framework/qb-crypto
-
-  - action: download_github
     dest: ./resources/[qb]/qb-weathersync
     ref: main
     src: https://github.com/qbcore-framework/qb-weathersync
@@ -474,6 +469,11 @@ tasks:
     dest: ./resources/qb-core
     ref: main
     src: https://github.com/LGRPS/qb-core
+
+  - action: download_github
+    dest: ./resources/[git]/qb-crypto
+    ref: main
+    src: https://github.com/LGRPS/qb-crypto
 
   - action: download_github
     dest: ./resources/[git]/qb-hud
