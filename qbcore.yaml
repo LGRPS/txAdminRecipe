@@ -177,11 +177,6 @@ tasks:
     src: https://github.com/qbcore-framework/qb-ifruitstore
 
   - action: download_github
-    dest: ./resources/[qb]/qb-bossmenu
-    ref: main
-    src: https://github.com/qbcore-framework/qb-bossmenu
-
-  - action: download_github
     dest: ./resources/[qb]/qb-weed
     ref: main
     src: https://github.com/qbcore-framework/qb-weed
@@ -298,11 +293,6 @@ tasks:
     dest: ./resources/[qb]/qb-skillbar
     ref: main
     src: https://github.com/qbcore-framework/qb-skillbar
-
-  - action: download_github
-    dest: ./resources/[qb]/qb-smallresources
-    ref: main
-    src: https://github.com/qbcore-framework/qb-smallresources
 
   - action: download_github
     dest: ./resources/[qb]/qb-recyclejob
@@ -466,6 +456,16 @@ tasks:
     src: https://github.com/LGRPS/aj-inventory
 
   - action: download_github
+    dest: ./resources/[git]/qb-bossmenu
+    ref: main
+    src: https://github.com/LGRPS/qb-bossmenu
+
+  - action: download_github
+    dest: ./resources/[git]/qb-burgershot
+    ref: main
+    src: https://github.com/LGRPS/qb-burgershot
+
+  - action: download_github
     dest: ./resources/qb-core
     ref: main
     src: https://github.com/LGRPS/qb-core
@@ -486,9 +486,19 @@ tasks:
     src: https://github.com/LGRPS/qb-shops
 
   - action: download_github
+    dest: ./resources/[git]/qb-smallresources
+    ref: main
+    src: https://github.com/LGRPS/qb-smallresources
+
+  - action: download_github
     dest: ./resources/[git]/qb-target
     ref: main
     src: https://github.com/LGRPS/qb-target
+
+  - action: download_github
+    dest: ./resources/txAdminRecipe
+    ref: main
+    src: https://github.com/LGRPS/txAdminRecipe
 
 ##############################################
 ###############   CLEAN UP   #################
