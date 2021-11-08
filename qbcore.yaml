@@ -230,11 +230,6 @@ tasks:
     src: https://github.com/qbcore-framework/qb-apartments
 
   - action: download_github
-    dest: ./resources/[qb]/qb-vehiclekeys
-    ref: main
-    src: https://github.com/qbcore-framework/qb-vehiclekeys
-
-  - action: download_github
     dest: ./resources/[qb]/qb-mechanicjob
     ref: main
     src: https://github.com/qbcore-framework/qb-mechanicjob
@@ -489,6 +484,11 @@ tasks:
     dest: ./resources/[git]/qb-target
     ref: main
     src: https://github.com/LGRPS/qb-target
+
+  - action: download_github
+    dest: ./resources/[git]/qb-vehiclekeys
+    ref: main
+    src: https://github.com/LGRPS/qb-vehiclekeys
 
   - action: download_github
     dest: ./resources/txAdminRecipe
