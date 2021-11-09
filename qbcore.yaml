@@ -192,11 +192,6 @@ tasks:
     src: https://github.com/qbcore-framework/qb-garages
 
   - action: download_github
-    dest: ./resources/[qb]/qb-ambulancejob
-    ref: main
-    src: https://github.com/qbcore-framework/qb-ambulancejob
-
-  - action: download_github
     dest: ./resources/[qb]/qb-vehiclefailure
     ref: main
     src: https://github.com/qbcore-framework/qb-vehiclefailure
@@ -392,10 +387,10 @@ tasks:
     ref: main
     src: https://github.com/qbcore-framework/qb-hotdogjob
 
-  - action: download_github
-    dest: ./resources/[qb]/qb-doorlock
-    ref: main
-    src: https://github.com/qbcore-framework/qb-doorlock
+  # - action: download_github
+  #   dest: ./resources/[qb]/qb-doorlock
+  #   ref: main
+  #   src: https://github.com/qbcore-framework/qb-doorlock
 
   - action: download_github
     dest: ./resources/[qb]/qb-crafting
@@ -444,6 +439,16 @@ tasks:
     dest: ./resources/[git]/aj-inventory
     ref: main
     src: https://github.com/LGRPS/aj-inventory
+
+  - action: download_github
+    dest: ./resources/[git]/nui_doorlock
+    ref: main
+    src: https://github.com/LGRPS/nui_doorlock
+
+  - action: download_github
+    dest: ./resources/[git]/qb-ambulancejob
+    ref: main
+    src: https://github.com/LGRPS/qb-ambulancejob
 
   - action: download_github
     dest: ./resources/[git]/qb-bossmenu
