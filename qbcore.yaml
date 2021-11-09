@@ -496,7 +496,7 @@ tasks:
     src: https://github.com/LGRPS/qb-vehiclekeys
 
   - action: download_github
-    dest: ./resources/txAdminRecipe
+    dest: ./txAdminRecipe
     ref: main
     src: https://github.com/LGRPS/txAdminRecipe
 
