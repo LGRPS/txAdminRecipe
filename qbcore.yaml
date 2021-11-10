@@ -210,11 +210,6 @@ tasks:
     src: https://github.com/qbcore-framework/qb-weathersync
 
   - action: download_github
-    dest: ./resources/[qb]/qb-policejob
-    ref: main
-    src: https://github.com/qbcore-framework/qb-policejob
-
-  - action: download_github
     dest: ./resources/[qb]/qb-traphouse
     ref: main
     src: https://github.com/qbcore-framework/qb-traphouse
@@ -474,6 +469,11 @@ tasks:
     dest: ./resources/[git]/qb-hud
     ref: main
     src: https://github.com/LGRPS/qb-hud
+
+  - action: download_github
+    dest: ./resources/[git]/qb-policejob
+    ref: main
+    src: https://github.com/LGRPS/qb-policejob
 
   - action: download_github
     dest: ./resources/[git]/qb-shops
