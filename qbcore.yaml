@@ -187,6 +187,11 @@ tasks:
     src: https://github.com/qbcore-framework/qb-lapraces
 
   - action: download_github
+    dest: ./resources/[qb]/qb-inventory
+    ref: main
+    src: https://github.com/qbcore-framework/qb-inventory
+
+  - action: download_github
     dest: ./resources/[qb]/qb-houses
     ref: main
     src: https://github.com/qbcore-framework/qb-houses
@@ -323,16 +328,16 @@ tasks:
     dest: ./resources/[qb]/qb-pawnshop
     ref: main
     src: https://github.com/qbcore-framework/qb-pawnshop
-
-  - action: download_github
-    dest: ./resources/[qb]/qb-taxijob
-    ref: main
-    src: https://github.com/qbcore-framework/qb-taxijob
     
   - action: download_github
     dest: ./resources/[qb]/qb-busjob
     ref: main
     src: https://github.com/qbcore-framework/qb-busjob
+
+  - action: download_github
+    dest: ./resources/[qb]/qb-taxijob
+    ref: main
+    src: https://github.com/qbcore-framework/qb-taxijob
 
   - action: download_github
     dest: ./resources/[qb]/qb-newsjob
@@ -356,6 +361,11 @@ tasks:
     dest: ./resources/[qb]/qb-truckerjob
     ref: main
     src: https://github.com/qbcore-framework/qb-truckerjob
+
+  - action: download_github
+    dest: ./resources/[qb]/qb-lawyerjob
+    ref: main
+    src: https://github.com/qbcore-framework/qb-lawyerjob
 
   - action: download_github
     dest: ./resources/[qb]/qb-keyminigame
@@ -435,10 +445,10 @@ tasks:
 ##############################################
 ########   LGRPS CUSTOMISED FILES   ##########
 ##############################################
-  - action: download_github
-    dest: ./resources/[git]/aj-inventory
-    ref: main
-    src: https://github.com/LGRPS/aj-inventory
+  # - action: download_github
+  #   dest: ./resources/[git]/aj-inventory
+  #   ref: main
+  #   src: https://github.com/LGRPS/aj-inventory
 
   - action: download_github
     dest: ./resources/[git]/nui_doorlock
