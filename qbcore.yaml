@@ -45,6 +45,9 @@ tasks:
     dest: ./resources/[standalone]/menuv
     src: ./tmp/menuv.zip
 
+  - action: waste_time # prevent github throttling
+    seconds: 10
+
   - action: download_github
     dest: ./resources/[standalone]/bob74_ipl
     ref: master
@@ -185,11 +188,6 @@ tasks:
     dest: ./resources/[qb]/qb-lapraces
     ref: main
     src: https://github.com/qbcore-framework/qb-lapraces
-
-  - action: download_github
-    dest: ./resources/[qb]/qb-inventory
-    ref: main
-    src: https://github.com/qbcore-framework/qb-inventory
 
   - action: download_github
     dest: ./resources/[qb]/qb-houses
@@ -440,6 +438,10 @@ tasks:
 ##############################################
 ########   LGRPS CUSTOMISED FILES   ##########
 ##############################################
+
+  - action: waste_time # prevent github throttling
+    seconds: 10
+
   # - action: download_github
   #   dest: ./resources/[git]/aj-inventory
   #   ref: main
@@ -479,6 +481,11 @@ tasks:
     dest: ./resources/[git]/qb-hud
     ref: main
     src: https://github.com/LGRPS/qb-hud
+
+  - action: download_github
+    dest: ./resources/[git]/qb-inventory
+    ref: main
+    src: https://github.com/LGRPS/qb-inventory
 
   - action: download_github
     dest: ./resources/[git]/qb-policejob
